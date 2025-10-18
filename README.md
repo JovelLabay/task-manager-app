@@ -8,7 +8,7 @@ A mobile task management application built with React Native and Expo, allowing 
 ![Task Manager App Screenshot](./assets/screenshots/Screenshot-2.png)
 ![Task Manager App Screenshot](./assets/screenshots/Screenshot-3.png)
 ![Task Manager App Screenshot](./assets/screenshots/Screenshot-4.png)
-![Task Manager App Screenshot](./assets/screenshots/Screenshot-5png)
+![Task Manager App Screenshot](./assets/screenshots/Screenshot-5.png)
 ![Task Manager App Screenshot](./assets/screenshots/Screenshot-6.png)
 
 _DetailTask Screen showing task completion status and navigation_
