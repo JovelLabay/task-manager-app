@@ -143,53 +143,6 @@ task-manager-app/
 3. **Task Details** - Modal screen showing task information
 4. **Task Management** - Toggle completion and delete functionality
 
-## 🎨 UI Components
-
-### Task Item
-
-- Checkbox for completion toggle
-- Title with 2-line truncation
-- Visual completion indicators
-- Tap to view details
-
-### Input Fields
-
-- Auto-focus navigation between fields
-- Keyboard return key handling
-- Multiline support for descriptions
-
-### Navigation
-
-- Stack navigation with modals
-- Custom header buttons
-- Safe area handling
-
-## 🔧 Configuration
-
-### Navigation Stack
-
-```typescript
-type RootStackParamList = {
-  Home: undefined;
-  AddTask: undefined;
-  DetailTask: { taskId?: number };
-};
-```
-
-### Task Data Structure
-
-```typescript
-interface TaskItem {
-  id: number;
-  title: string;
-  description: string;
-  isCompleted: boolean;
-  isDeleted: boolean;
-}
-```
-
-## 📝 Usage Examples
-
 ### Adding a Task
 
 1. Tap "Add" button in header
@@ -207,56 +160,6 @@ interface TaskItem {
 1. Tap on any task item
 2. Modal opens with full task details
 3. Use "Back" button to return
-
-## 🚧 Development Notes
-
-### State Management
-
-- Basic useState for task management
-- For production apps, consider Redux with Saga or Context API
-
-### ID Generation
-
-- Simple timestamp + random number approach
-- For production, consider UUID or backend-generated IDs
-
-### Performance
-
-- FlatList for efficient task rendering
-- Optimized re-renders with proper key props
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## 🔮 Future Enhancements
-
-- [ ] Task categories and tags
-- [ ] Due dates and reminders
-- [ ] Search and filter functionality
-- [ ] Data persistence (AsyncStorage/SQLite)
-- [ ] User authentication
-- [ ] Cloud synchronization
-- [ ] Task priority levels
-- [ ] Dark mode support
-
-## 🐛 Known Issues
-
-- Android status bar overlay (resolved with SafeAreaProvider)
-- Focus navigation between input fields (implemented)
-- Task completion state management (optimized)
-
-## 📞 Support
-
-For support, email your-email@example.com or create an issue in the repository.
 
 ---
 
